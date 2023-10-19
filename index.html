@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle>Your Name-portfolio<tittle>
+            <style>
+                body {
+                    font-family:Arial,sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f0f0f0;
+                }
+                header {
+                    background-color: #333;
+                    color: #fff;
+                    text-align: center;
+                    padding: 2rem 0;
+                    position: relative; /* Add this */
+                }
+                .header-content h1{
+                    font: size 2.5rem;
+                }
+                /* Add styles for the round profile picture */
+                .profile-picture {
+                    width: 0%; /* Adjust the size as needed */
+                    height: 10rcap;
+                    border-radius: 75%; /* Creat a circular shape */
+                    object-fit: cover; /* To ensure the image fills the circular area */
+                    position: absolute; /*Add this */
+                    top: 75px; /* Adjust top positon as neeed */
+                    left: 75px; /* Adjust left position as need */
+                } 
+                nav{
+                    background-color: #333;
+                    color: #fff;
+                    text-align: center;
+                }
+                nav ul{
+                    list-style: none;
+                    padding: 0;
+                }
+                nav ul li{
+                    display: inline;
+                    margin: 0 20px;
+                }
+                nav ul li a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                .section-content{
+                    background-color: #fff;
+                    padding: 2rem;
+                    margin: 1rem;
+                    border-radius: 20px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                }
+
+                .download-buttun{
+                    background-color: #333;
+                    color: #fff;
+                    padding: 0.5rem 1rem;
+                    text-decoration: none;
+                    border-radius: 20px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                }
+
+                .download-buttun {
+                    background-color: #333;
+                    color: #fff;
+                    padding: 0.5rem 1rem;
+                    text-decoration: none;
+                    border-radius: 20px;
+                    display: inline-block;
+                    margin-top: 10px;
+                }
+                .download-buttun:hover
+                {
+                    background-color: #555;
+                }
+                footer
+{
+    text-align: center;
+    padding: 1rem o;
+    background-color: #333;
+    color: #fff;
+}
+ul{
+    list-style:disc;
+    padding-left: 20px;
+}
+            </style>
+    </head>
+    <header>
+        <div class="header-content">
+            <!-- add your profile picture here-->
+            <img src="kkk.jpg".jpg"alt="your profile picture">
+            <h1>KARTHIKA</h1>
+            <p>Student</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="#About">About</a></li>
+            <li> <a href="#Education">Education</a></li>
+             <li> <a href="#Skills">Skills</a></li>
+             <li> <a href="#Pojects">project</a></li>
+             <li> <a href="#Resume">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="adout">
+        <div class="section-content">
+            <h2>About me</h2>
+            <p>Hello Everyone! This is Karthika and A I am a IT professional</p>
+        </div>
+    </section>
+    <sec id="education">
+        <div class="section-content">
+            <h2>B.Sc IT</h2>
+            <p>Seethalakshmi Achi College for Women</p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="selection-content">
+        <h2> skills</h2> 
+        <ul>
+            <li>Python</li>
+            <li>Artificial Intelligent</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>Programming</li>
+        </ul>
+        </div>
+    <section id="projects">
+        <div class="section-content">
+            <h2>projects</h2>
+            <ul>
+                <li><a href="#">project 1</a></li>
+                <li><a href="#">project 2</a></li>
+                <!-- Add more project link here-->
+            </ul>
+        </div>
+    </section>
+    
+    <section id="resume">
+        <center>
+            <div class="section-content">
+                <h2>Resume</h2>
+                <a href="./karthika14.docx"alt="download-buttun">Dowload cv</a>
+            </div>
+        </center>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Karthika</p>
+    </footer>
+<script>
+    //smooth scrolling to section when clicking on navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor =>)
+    {
+        anchor.addEventListener('click',function(e) {
+preventDefault();
+const targetID = this.getAttribute('href').substring(1);
+const targetElement= document.getElementById(targetID);
+if(targetElement){
+    window.scrollTo({
+        top:targetElement.offsetTop,
+        behaviour: 'smooth'
+       });
+      }
+  });
+});
+    </script>
+    </body>
+</html>
